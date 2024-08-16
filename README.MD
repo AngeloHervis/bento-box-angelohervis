@@ -1,19 +1,14 @@
+# Central de Links - Ângelo Hervis
 
-# Imagem do Projeto
-![imagem do projeto](./img/rm-dev-link-bio-2.0.png "Link Bio RM Dev 2.0")
+Este é um site pessoal criado por Ângelo Hervis com o objetivo de reunir links importantes, exibir habilidades técnicas e destacar projetos. A página inclui widgets personalizados que mostram informações pessoais, competências técnicas, links para redes sociais e muito mais.
 
-# Meus Links - Ricardo Moura│Dev
+## Funcionalidades
 
-Este é um site pessoal desenvolvido por Ricardo Moura para centralizar links importantes e destacar habilidades e projetos. A página inclui widgets com informações pessoais, habilidades técnicas, links para redes sociais, e muito mais.
-
-## Características
-
-- **Loading Screen Customizado:** Uma tela de carregamento animada que mostra o progresso em porcentagem até que o site esteja completamente carregado.
-- **Perfil do Usuário:** Informações do desenvolvedor com foto, nome e título.
-- **Habilidades Técnicas:** Ícones de tecnologias que destacam as hard skills do desenvolvedor.
-- **Links para Redes Sociais:** Links diretos para TikTok, Instagram, GitHub e LinkedIn.
-- **Widget de Marca Pessoal:** Link para a página do Instagram da marca Tread Skateboard.
-- **Portfólio e Freelancer:** Links para o site de portfólio pessoal e um site com recursos para freelancers.
+- **Tela de Carregamento Personalizada:** Animação que exibe o progresso de carregamento em porcentagem até que o site esteja completamente pronto.
+- **Perfil Pessoal:** Exibe a foto, nome e título do desenvolvedor.
+- **Habilidades Técnicas:** Ícones representando as principais tecnologias dominadas pelo desenvolvedor.
+- **Links para Redes Sociais:** Acesso direto para TikTok, Instagram, GitHub, LinkedIn, YouTube e Blog Pessoal.
+- **Portfólio e Freelance:** Links para o portfólio pessoal e recursos para freelancers.
 
 ## Tecnologias Utilizadas
 
@@ -21,7 +16,7 @@ Este é um site pessoal desenvolvido por Ricardo Moura para centralizar links im
 - CSS3
 - JavaScript
 - FontAwesome para ícones
-- Roboto Font do Google Fonts
+- Fonte Roboto do Google Fonts
 
 ## Estrutura de Arquivos
 
@@ -31,11 +26,11 @@ Este é um site pessoal desenvolvido por Ricardo Moura para centralizar links im
 |-- style.css
 |-- animationLoading.js
 |-- /img
-    |-- user-perfil.png
-    |-- smile-icon.png
+    |-- user-profile.png
+    |-- check-icon.png
     |-- web-black-icon.png
     |-- web-white-icon.png
-    |-- tread-skateboard.jpg
+
 ```
 
 ## Como Usar
@@ -51,6 +46,6 @@ Contribuições são sempre bem-vindas! Se você tem alguma sugestão para melho
 ## Autor
 
 **Ricardo Moura**
-- [Perfil no GitHub](https://github.com/RicardoMouraa)
-- [LinkedIn](https://www.linkedin.com/in/ricardomouradev/)
-- [Instagram](https://www.instagram.com/riicardomoura/)
+- [Perfil no GitHub](https://github.com/AngeloHervis)
+- [LinkedIn](https://www.linkedin.com/in/angelo-hervis/)
+- [Instagram](https://www.instagram.com/angelohervis/)
