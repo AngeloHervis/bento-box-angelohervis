@@ -184,47 +184,47 @@ a {
 }
 
 /* Cores específicas para cada ícone */
-.skills-icons .fa-wordpress-simple:hover {
-  color: #21759b;
+.skills-icons .fa-wordpress-simple {
+  --color-animacao: #21759b;
 }
-.skills-icons .fa-js:hover {
-  color: #f7df1e;
-}
-
-.skills-icons .fa-figma:hover {
-  color: #f01c0d;
+.skills-icons .fa-js {
+  --color-animacao: #f7df1e;
 }
 
-.skills-icons .fa-python:hover {
-  color: #3776ab;
+.skills-icons .fa-figma {
+  --color-animacao: #f01c0d;
 }
 
-.skills-icons .fa-react:hover {
-  color: #61dafb;
+.skills-icons .fa-python {
+  --color-animacao: #3776ab;
 }
 
-.skills-icons .fa-node:hover {
-  color: #339933;
+.skills-icons .fa-react {
+  --color-animacao: #61dafb;
 }
 
-.skills-icons .fa-php:hover {
-  color: #777bb4;
+.skills-icons .fa-node {
+  --color-animacao: #339933;
 }
 
-.skills-icons .fa-java:hover {
-  color: #007396;
+.skills-icons .fa-php {
+  --color-animacao: #777bb4;
 }
 
-.skills-icons .fa-trello:hover {
-  color: #0079bf;
+.skills-icons .fa-java {
+  --color-animacao: #007396;
 }
 
-.skills-icons .fa-git-alt:hover {
-  color: #f05032;
+.skills-icons .fa-trello {
+  --color-animacao: #0079bf;
 }
 
-.skills-icons .fa-palette:hover {
-  color: #eebb2f;
+.skills-icons .fa-git-alt {
+  --color-animacao: #f05032;
+}
+
+.skills-icons .fa-palette {
+  --color-animacao: #eebb2f;
 }
 
 /****************** WIDGET 3 */
@@ -267,34 +267,28 @@ a {
   color: var(--color-white);
 }
 
-.redes-sociais .tiktok:hover i {
-  color: #7f14d6;
-  transition: color 0.3s;
+.redes-sociais .tiktok {
+  --color-animacao-redes: #7f14d6;
 }
 
-.redes-sociais .instagram:hover i {
-  color: #e1306c;
-  transition: color 0.3s;
+.redes-sociais .instagram {
+  --color-animacao-redes: #e1306c;
 }
 
-.redes-sociais .github:hover i {
-  color: #000;
-  transition: color 0.3s;
+.redes-sociais .github {
+  --color-animacao-redes: #000;
 }
 
-.redes-sociais .linkedin:hover i {
-  color: #0077b5;
-  transition: color 0.3s;
+.redes-sociais .linkedin {
+  --color-animacao-redes: #0077b5;
 }
 
-.redes-sociais .internet:hover i {
-  color: #4caf50;
-  transition: color 0.3s;
+.redes-sociais .internet {
+  --color-animacao-redes: #4caf50;
 }
 
-.redes-sociais .youtube:hover i {
-  color: #ff0000;
-  transition: color 0.3s;
+.redes-sociais .youtube {
+  --color-animacao-redes: #ff0000;
 }
 
 /****************** WIDGET 4 */
@@ -424,4 +418,80 @@ a {
 .meu-site img,
 .freelancer img {
   animation: pulse 3s infinite ease-in-out;
+}
+
+
+@keyframes acenderApagar {
+  0%, 100% {
+    color: #fff;
+  }
+  50% {
+    color: var(--color-animacao);
+  }
+}
+
+.skills-icons i {
+  color: #fff;
+  font-size: 1.4rem;
+  animation: acenderApagar 5s infinite;
+}
+
+@keyframes acenderApagarRedes {
+  0%, 100% {
+    color: #fff;
+  }
+  50% {
+    color: var(--color-animacao-redes);
+  }
+}
+
+.redes-sociais i {
+  font-size: 2.8rem;
+  color: #fff;
+  animation: acenderApagarRedes 7s infinite;
+}
+
+
+
+@keyframes balancar {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Animação de "acender" para os textos dos botões */
+@keyframes acenderTexto {
+  0%, 100% {
+    color: var(--color-white);
+  }
+  50% {
+    color: #31db0e;
+  }
+}
+
+/* Aplicando a animação de balançar nos botões */
+.widget4:hover,
+.widget5:hover {
+  animation: balancar 0.5s ease-in-out;
+}
+
+/* Aplicando a animação de acender no texto */
+.meu-site h1,
+.freelancer h1 {
+  animation: acenderTexto 10s infinite;
+}
+
+/* Balançar e acender juntos ao passar o mouse */
+.meu-site:hover h1,
+.freelancer:hover h1 {
+  color: var(--color-blue);
 }
